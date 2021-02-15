@@ -16,6 +16,6 @@ for y in range(0, size):
 for x in range(0, size):
     print("#" * size)
 
-# At home draw a triangule
+# At home draw a triangle
 
 
