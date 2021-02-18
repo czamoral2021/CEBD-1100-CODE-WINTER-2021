@@ -13,12 +13,13 @@ print(my_list)
 print(len(my_list))
 # elements of the list
 
-song_genres ="Rock", "Classical", "Alternative")
+song_genres =("Rock", "Classical", "Alternative")
 
 print(song_genres)
 
 for g in song_genres:
     print(g)
+
 
 # LIST => You can change it
 # TUPLE => You cannot change it (immutable)

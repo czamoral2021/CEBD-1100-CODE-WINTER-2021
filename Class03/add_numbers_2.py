@@ -13,5 +13,6 @@ while True:
         sum_of_numbers += entered_value
 
 print(f"The sum of the numbers is {sum_of_numbers}")
+# print("The sum of the numbers is {sum_of_numbers}") really bad sentence, no format
 
 
