@@ -36,13 +36,11 @@ TABLE_TITLE = "\t \t \t Multiplication Table"
 TAB_SUBTITLE_1 = "\t \t "
 TAB_SUBTITLE_2 = "----------"
 CONST_SUBTITLE_2 = 4
-# v_len = 0
-v_len_previous = 0
 v_calc = 0
 v_size = ""
 v_subtitle_1 = ""
 v_subtitle_2 = "-"
-w = ""
+w_1 = ""
 h_1 = ""
 while v_size != "s":
     v_size = input("What size multiplication table would you like printed?(enter \"S or s\" to stop)>")
@@ -54,7 +52,6 @@ while v_size != "s":
         if TABLE_MIN <= int(v_size) <= TABLE_MAX:
             # printing the table name
             for z in range(1, int(v_size) + 1):
-                # formatting the left column as an index for each row
                 if z == TABLE_MIN:
                     v_subtitle_1 = TAB_SUBTITLE_1 + str(z) + ""
                     v_subtitle_2 = TAB_SUBTITLE_2
@@ -69,8 +66,8 @@ while v_size != "s":
             print(v_subtitle_2)
             for y in range(1, int(v_size) + 1):
                 # formatting the left column as an index for each row
-                w = "\t"
-                print("{0:2} | {1}".format(y, w), end="")
+                w_1 = "\t"
+                print("{0:2} | {1}".format(y, w_1), end="")
                 # calculation
                 for x in range(1, int(v_size) + 1):
                     v_calc = y * x

@@ -24,10 +24,11 @@
 # .
 
 # This program will have a similar output, but until 150
-# initialize variables
+# initialize variables and constant
+MAX_NUMBER_RANGE = 151
 y = ""
-for x in range(151):
-    if x == 151:
+for x in range(MAX_NUMBER_RANGE):
+    if x == MAX_NUMBER_RANGE:
         # break the For loop and ending the program
         break
     elif (int(x) % 3 == 0) and (int(x) % 5 != 0):
