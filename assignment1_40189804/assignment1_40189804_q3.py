@@ -23,7 +23,7 @@
 # .
 # .
 
-# This program will have a similar output, but until 150
+# This program will have a similar output, but until 150, the list is from 0 to 150
 # initialize variables and constant
 MAX_NUMBER_RANGE = 151
 y = ""
@@ -51,9 +51,8 @@ for x in range(MAX_NUMBER_RANGE):
         # {1} it is the parameter #1
     else:
         if (int(x) % 5 != 0) and (int(x) % 3 != 0):
-            # the number is not divisible by 3 and 5, print just the number
+            # the number is not divisible by 3 and 5 neither, print just the number
             y = "\t"
             print("{0:3}: {1}".format(x, y))
             # {0:3} format allow to align the parameter #0 to the right until 3 digits
             # {1} it is the parameter #1
-# End program

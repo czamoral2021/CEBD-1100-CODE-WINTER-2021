@@ -81,4 +81,4 @@ while v_size != "s":
                         print("{0:2} {1}".format(v_calc, h_1), end="")
                 print()
         else:
-            print("Table size issues, please between 1 and 10")
+            print(f"Table size issues, please between {TABLE_MIN} and {TABLE_MAX}")
