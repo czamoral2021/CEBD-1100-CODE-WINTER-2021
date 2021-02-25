@@ -3,6 +3,6 @@
 
 x = 5
 if x == 5:
-    print ("The number is 5")
+    print("The number is 5")
 else:
     print("Not 5")

@@ -1,4 +1,4 @@
-my_name=  "Brendan"
+my_name = "Brendan"
 a_number = 42
 print("Hello World")
 print(2+3)

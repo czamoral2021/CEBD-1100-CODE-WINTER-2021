@@ -20,7 +20,7 @@
 answer = ""
 while answer != "q":
     answer = input("Enter a number (enter \"Q\" to stop)>")
-    if answer  == "q" or answer == "Q":
+    if answer == "q" or answer == "Q":
         # if answer[0:1].upper() == "Q"
         break
     if int(answer) % 10 == 0:

@@ -7,7 +7,7 @@ name = input("Please enter your name >").strip()
 if len(name) > 6:
     print("Name is longer than 6 characters")
 
-    if len (name) < 10:
+    if len(name) < 10:
         print("But it is less than 10 characters")
 else:
     print("Name is not longer than 6 characters")
