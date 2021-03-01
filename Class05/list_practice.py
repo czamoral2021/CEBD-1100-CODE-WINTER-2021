@@ -2,7 +2,7 @@
 # Print max, min, average ....
 
 # Sort a list
-# Create an empty list and sort the firts list into the 2nd
+# Create an empty list and sort the first list into the 2nd
 
 list = []
 tuple = ()
