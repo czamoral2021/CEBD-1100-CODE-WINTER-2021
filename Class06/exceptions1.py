@@ -3,7 +3,7 @@
 # raise Exception("The credit card requires 16 digits")
 
 def divide_numbers(n1:float, n2:float):
-    result = 0
+    # result = 0
     try:
         result = n1 / n2
         return result

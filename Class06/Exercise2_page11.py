@@ -4,6 +4,7 @@ def is_divisible_by(num, divisor):
         return False
     return num % divisor == 0
 
+
 num = float(input("Enter a number > "))
 divisor = float(input("Enter a number to see if divisible > "))
 if is_divisible_by(num, divisor):
