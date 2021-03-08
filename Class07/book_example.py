@@ -8,9 +8,12 @@ book1.ISBN = "123456789"
 
 book2 = Book()
 book2.title = "Insomnia"
-book2.ISBN = "23456789"
+book2.ISBN = "234567890"
 
-# print(book2.title)
+book3 = Book()
+book3.title = "Insomnia"
+book3.ISBN = None
+
 array_of_books = [book1, book2]
 
 for b in array_of_books:
