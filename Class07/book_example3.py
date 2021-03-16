@@ -1,10 +1,10 @@
 class Book:
     # constructor function in OOP - Object-oriented programming
     def __init__(self, ISBN, title, used):
-        self._ISBN = ISBN
-        self._title = title
-        self._owner = "Biblioteque Brossard"
-        self. used = used
+        self.__ISBN = ISBN
+        self.__title = title
+        self.__owner = "Biblioteque Brossard"
+        self.used = used
     # _ underscore means private, you cannot assign values directly
 
     # def set_isbn(self, isbn_value):
@@ -12,7 +12,7 @@ class Book:
     # SET should be forbidden FOR isbn, because it is a key of the object not possible to change once it is created
 
     def get_isbn(self):
-        return self._ISBN
+        return self.__ISBN
 
     # GETTER BUT NOT SETTER => read only
 
