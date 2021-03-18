@@ -1,5 +1,6 @@
 import datetime
 from PurchaseEntities.Item import Item
+import PurchaseEntities.Constants as constants
 
 class Order:
 
@@ -17,7 +18,7 @@ class Order:
 
         for i in self.items:
             if i.sku == sku:
-                pass
+                self.items.remove()
                 # delete the item here.
 
     def total_item_price_notax(self):
@@ -28,8 +29,32 @@ class Order:
             total_price = total_price + i.price
 
         return total_price
-    #
-    # def total_item_price_withtax(self):
+
+    # Assume the tax rate =  15.56 %
+    def total_item_price_withtax(self):
+
+        total_price = self.total_item_price_notax()
+
+        for i in self.items:
+            if i.taxable:
+                total_price += i.price * constants.TAX_RATE
+
+        return total_price
+
+    # method to print report
+    def __str__(self):
+
+        order_text = "Order number: " + str(self.order_number) + "\n" + ("-" * 20) + "\n"
+
+        for i in self.items:
+            order_text = order_text + str(i) + "\n"
+
+        order_text = order_text + "\n"
+
+        order_text = order_text + "Total price with tax : " + str(self.total_item_price_withtax())
+
+        return order_text
+
 
 
 
